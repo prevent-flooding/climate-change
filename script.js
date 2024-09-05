@@ -1,7 +1,8 @@
-// 初始化地圖
-var map = L.map('map').setView([25.033, 121.565], 10);
 
-// 設定圖層
+var map = L.map('map', {
+    center: [22.604964, 120.300476],
+    zoom: 16
+});
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
